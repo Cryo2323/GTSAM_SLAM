@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8.11)
-project (HW3)
+project (TR1)
 
 find_package(GTSAM REQUIRED)
 include_directories(${GTSAM_INCLUDE_DIR})
