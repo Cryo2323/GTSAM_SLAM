@@ -1,12 +1,18 @@
-# 3D SLAM with GTSAM
+# SLAM with GTSAM
 
-This project implements a 3D Simultaneous Localization and Mapping (SLAM) solution using the GTSAM library. It reads pose and edge data from a `.g2o` file, performs both batch and incremental optimization, and outputs the optimized poses.
+This project implements both 2D and 3D Simultaneous Localization and Mapping (SLAM) solutions using the GTSAM library. It reads pose and edge data from `.g2o` files, performs both batch and incremental optimization, and outputs the optimized poses.
 
 ## Features
 
-- **Batch Optimization**: Uses Gauss-Newton optimization to solve the SLAM problem in a batch manner.
-- **Incremental Optimization**: Utilizes iSAM2 for real-time, incremental updates to the SLAM solution.
-- **Data Handling**: Reads and processes `.g2o` files containing 3D pose and edge information.
+- **2D SLAM**: 
+  - Batch Optimization: Uses Gauss-Newton optimization for batch processing.
+  - Incremental Optimization: Utilizes iSAM2 for real-time, incremental updates.
+  
+- **3D SLAM**:
+  - Batch Optimization: Solves the SLAM problem using Gauss-Newton optimization.
+  - Incremental Optimization: Uses iSAM2 for incremental updates to the SLAM solution.
+
+- **Data Handling**: Reads and processes `.g2o` files containing pose and edge information for both 2D and 3D scenarios.
 
 ## Prerequisites
 
@@ -18,5 +24,5 @@ This project implements a 3D Simultaneous Localization and Mapping (SLAM) soluti
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/yourusername/3d-slam-gtsam.git
-   cd 3d-slam-gtsam
+   git clone https://github.com/yourusername/slam-gtsam.git
+   cd slam-gtsam
